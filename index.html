@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Neon Tic Tac Toe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="rules">
+
+<h1 id="title"></h1>
+
+<h2>Game Rules</h2>
+
+<p>1. Game is played on a 3×3 grid.</p>
+<p>2. Player X starts first.</p>
+<p>3. Click an empty box to place your mark.</p>
+<p>4. First player with 3 in a row wins.</p>
+
+<button onclick="startGame()">Play vs Player</button>
+<button onclick="startAI()">Play vs Computer</button>
+
+</div>
+
+<div id="game" class="hidden">
+
+<h1 class="neon">TIC TAC TOE</h1>
+
+<div class="board">
+
+<div class="cell" onclick="play(this,0)"></div>
+<div class="cell" onclick="play(this,1)"></div>
+<div class="cell" onclick="play(this,2)"></div>
+
+<div class="cell" onclick="play(this,3)"></div>
+<div class="cell" onclick="play(this,4)"></div>
+<div class="cell" onclick="play(this,5)"></div>
+
+<div class="cell" onclick="play(this,6)"></div>
+<div class="cell" onclick="play(this,7)"></div>
+<div class="cell" onclick="play(this,8)"></div>
+
+</div>
+
+<div id="status">Player X Turn</div>
+
+<button onclick="restart()">Restart Game</button>
+
+</div>
+
+<audio id="clickSound">
+<source src="https://www.soundjay.com/button/button-16.mp3">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
